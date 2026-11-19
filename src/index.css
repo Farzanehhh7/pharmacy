@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Vazirmatn", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-pharmacy-green: #61b537;
+  --color-pharmacy-green-dark: #49862B;
+  --color-pharmacy-green-tint: #f1f8ed;
+  --color-pharmacy-purple: #8b37b5;
+  --color-pharmacy-purple-dark: #6F2C91;
+  --color-pharmacy-red: #e92050;
+}
+
+@layer base {
+  html {
+    font-family: "Vazirmatn", system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
